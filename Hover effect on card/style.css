@@ -61,5 +61,32 @@ body{
 .card2::before{
     content: '';
     position: absolute;
-    
+    height: 50%;
+    width: 180%;
+    background-color: #fff;
+    transform: rotate(-45deg);
+    background-color: tomato;
+
+}
+.card2::after{
+    content: '';
+    position: absolute;
+    inset: 5px;
+    background-color: #222;
+    border-radius: 10px;
+}
+
+.card2:hover::before{
+    animation: animate2 2s linear infinite;
+   
+}
+@keyframes animate2 {
+    from{
+        transform: rotate(0deg);
+        filter: hue-rotate(180deg);
+    }
+    to{
+        transform: rotate(360deg);
+        filter: hue-rotate(350deg);
+    }
 }
