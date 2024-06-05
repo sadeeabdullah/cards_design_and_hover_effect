@@ -53,3 +53,13 @@ body{
         filter: hue-rotate(350deg);
     }
 }
+
+/* 2nd card border hover animation */
+.card2{
+    overflow:hidden;
+}
+.card2::before{
+    content: '';
+    position: absolute;
+    
+}
